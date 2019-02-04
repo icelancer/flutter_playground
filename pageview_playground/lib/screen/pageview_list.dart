@@ -19,6 +19,11 @@ class PageViewPlaygroundList extends StatelessWidget {
             route: '/builder',
             color: Colors.green,
           ),
+          _PageViewPlaygroundListItem(
+            title: 'Page View Vertical Orientation',
+            route: '/orientation',
+            color: Colors.red,
+          ),
         ],
       ),
     );
@@ -44,6 +49,7 @@ class _PageViewPlaygroundListItem extends StatelessWidget {
         decoration: BoxDecoration(color: color),
         child: Text(
           title,
+          textAlign: TextAlign.center,
           style: TextStyle(
             color: Colors.white,
             fontSize: 30,
