@@ -24,6 +24,11 @@ class PageViewPlaygroundList extends StatelessWidget {
             route: '/orientation',
             color: Colors.red,
           ),
+          _PageViewPlaygroundListItem(
+            title: 'Page View No Snapping',
+            route: '/noSnapping',
+            color: Colors.black,
+          ),
         ],
       ),
     );

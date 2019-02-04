@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:pageview_playground/screen/widgets/pageview_item.dart';
 
-class PageViewWithBuilder extends StatelessWidget {
+class PageViewNoSnapping extends StatelessWidget {
   final List<Color> colors = [
     Colors.blue,
     Colors.cyan,
@@ -15,17 +15,22 @@ class PageViewWithBuilder extends StatelessWidget {
   ];
 
   Widget buildItem(BuildContext context, int index) {
-    return PageViewItem(title: 'Page ${index + 1}', color: colors[(index + 1) % colors.length],);
+    return PageViewItem(
+      title: 'Page ${index + 1}',
+      color: colors[(index + 1) % colors.length],
+    );
   }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: Text('PageView with Builder'),
+          title: Text('PageView No Snapping'),
         ),
-        body: PageView.builder(itemBuilder: buildItem, itemCount: 100,)
-    );
+        body: PageView.builder(
+          itemBuilder: buildItem,
+          itemCount: 100,
+          pageSnapping: false,
+        ));
   }
-
 }

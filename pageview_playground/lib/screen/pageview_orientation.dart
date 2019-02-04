@@ -15,7 +15,6 @@ class PageViewOrientation extends StatelessWidget {
   ];
 
   Widget buildItem(BuildContext context, int index) {
-    print('$index');
     return PageViewItem(
       title: 'Page ${index + 1}',
       color: colors[(index + 1) % colors.length],
