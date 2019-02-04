@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:pageview_playground/screen/widgets/pageview_item.dart';
 
 class PageViewBasic extends StatelessWidget {
 
@@ -10,36 +11,13 @@ class PageViewBasic extends StatelessWidget {
       ),
       body: PageView(
         children: <Widget>[
-          _PageViewItem(color: Colors.cyan, title: 'Page 1'),
-          _PageViewItem(color: Colors.deepPurple, title: 'Page 2'),
-          _PageViewItem(color: Colors.red, title: 'Page 3'),
-          _PageViewItem(color: Colors.blue, title: 'Page 4'),
+          PageViewItem(color: Colors.cyan, title: 'Page 1'),
+          PageViewItem(color: Colors.deepPurple, title: 'Page 2'),
+          PageViewItem(color: Colors.red, title: 'Page 3'),
+          PageViewItem(color: Colors.blue, title: 'Page 4'),
         ],
       ),
     );
   }
 }
 
-class _PageViewItem extends StatelessWidget {
-  final String title;
-  final Color color;
-
-  _PageViewItem({ this.title, this.color });
-
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      alignment: Alignment(0, -0.1),
-      color: color,
-      child: Text(
-        title,
-        style: TextStyle(
-          color: Colors.white70,
-          fontSize: 70,
-          fontWeight: FontWeight.bold,
-        ),
-      ),
-    );
-  }
-
-}

@@ -12,6 +12,12 @@ class PageViewPlaygroundList extends StatelessWidget {
           _PageViewPlaygroundListItem(
             title: 'Page View Basic',
             route: '/basic',
+            color: Colors.cyan,
+          ),
+          _PageViewPlaygroundListItem(
+            title: 'Page View With Builder',
+            route: '/builder',
+            color: Colors.green,
           ),
         ],
       ),
@@ -22,8 +28,9 @@ class PageViewPlaygroundList extends StatelessWidget {
 class _PageViewPlaygroundListItem extends StatelessWidget {
   final String title;
   final String route;
+  final Color color;
 
-  _PageViewPlaygroundListItem({this.title, this.route});
+  _PageViewPlaygroundListItem({this.title, this.route, this.color});
 
   @override
   Widget build(BuildContext context) {
@@ -32,9 +39,9 @@ class _PageViewPlaygroundListItem extends StatelessWidget {
         Navigator.of(context).pushNamed(route);
       },
       child: Container(
-        padding: EdgeInsets.all(50.0),
+        height: 150,
         alignment: Alignment.center,
-        decoration: BoxDecoration(color: Colors.cyan),
+        decoration: BoxDecoration(color: color),
         child: Text(
           title,
           style: TextStyle(
