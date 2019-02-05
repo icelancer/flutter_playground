@@ -29,6 +29,11 @@ class PageViewPlaygroundList extends StatelessWidget {
             route: '/noSnapping',
             color: Colors.black,
           ),
+          _PageViewPlaygroundListItem(
+            title: 'Page View No Snapping Vertically',
+            route: '/noSnappingVertical',
+            color: Colors.blue,
+          ),
         ],
       ),
     );
@@ -56,7 +61,7 @@ class _PageViewPlaygroundListItem extends StatelessWidget {
           title,
           textAlign: TextAlign.center,
           style: TextStyle(
-            color: Colors.white,
+            color: Colors.white70,
             fontSize: 30,
             fontWeight: FontWeight.bold,
           ),
