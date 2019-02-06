@@ -39,6 +39,11 @@ class PageViewPlaygroundList extends StatelessWidget {
             route: '/scrollPysics',
             color: Colors.brown,
           ),
+          _PageViewPlaygroundListItem(
+            title: 'Page View Animation',
+            route: '/animation',
+            color: Colors.deepPurple
+          ),
         ],
       ),
     );

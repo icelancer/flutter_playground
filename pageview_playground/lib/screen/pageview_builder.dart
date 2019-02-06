@@ -22,7 +22,7 @@ class PageViewWithBuilder extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: Text('PageView with Builder'),
+          title: Text('PageView Animation'),
         ),
         body: PageView.builder(itemBuilder: buildItem, itemCount: 100,)
     );
