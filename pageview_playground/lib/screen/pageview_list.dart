@@ -34,6 +34,11 @@ class PageViewPlaygroundList extends StatelessWidget {
             route: '/noSnappingVertical',
             color: Colors.blue,
           ),
+          _PageViewPlaygroundListItem(
+            title: 'Page View Scroll Physics',
+            route: '/scrollPysics',
+            color: Colors.brown,
+          ),
         ],
       ),
     );

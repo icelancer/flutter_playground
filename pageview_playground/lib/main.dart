@@ -5,6 +5,7 @@ import 'package:pageview_playground/screen/pageview_builder.dart';
 import 'package:pageview_playground/screen/pageview_orientation.dart';
 import 'package:pageview_playground/screen/pageview_snapping.dart';
 import 'package:pageview_playground/screen/pageview_snapping_vertical.dart';
+import 'package:pageview_playground/screen/pageview_scroll_physics.dart';
 
 void main() => runApp(PageViewApp());
 
@@ -20,6 +21,7 @@ class PageViewApp extends StatelessWidget {
         '/orientation': (_) => PageViewOrientation(),
         '/noSnapping': (_) => PageViewNoSnapping(),
         '/noSnappingVertical': (_) => PageViewNoSnappingVertical(),
+        '/scrollPysics': (_) => PageViewScrollPhysics(),
       },
     );
   }
